@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TongTu1DenN {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+
+        System.out.print("Nhap so n: ");
+        int n = kb.nextInt();
+
+        int tong = 0;
+        int i = 1;
+
+        if (n < 1) {
+            System.out.println("Gia tri n khong hop le");
+        } else {
+            while (i <= n) {
+                tong = tong + i;
+                i++;
+            }
+            System.out.println("Tong cac so tu nhien tu 1 den " + n + " la: " + tong);
+        }
+    }
+}
