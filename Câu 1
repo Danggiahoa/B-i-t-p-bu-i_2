@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class XeploaiHocSinh {
+    public static void main(String[] args) {
+        double diem;
+
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Nhap diem cua hoc sinh: ");
+        diem = kb.nextDouble();
+
+        // Xep loai hoc sinh
+        if (diem >= 9) {
+            System.out.println("Xep loai gioi");
+        } else if (diem >= 7) {
+            System.out.println("Xep loai kha");
+        } else if (diem >= 5) {
+            System.out.println("Xep loai trung binh");
+        } else if (diem >= 0) {
+            System.out.println("Xep loai yeu");
+        } else {
+            System.out.println("Diem khong hop le");
+        }
+    }
+}
